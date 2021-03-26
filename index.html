@@ -5,26 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <title>Story Generator</title>
     
 </head>
 <body>
-    <div>
-        <label for="customname">Enter custom name:</label>
-        <input id="customname" type="text" placeholder="">
-      </div>
-      <div>
-        <label for="us">US</label><input id="us" type="radio" name="ukus" value="us" checked>
-        <label for="uk">UK</label><input id="uk" type="radio" name="ukus" value="uk">
-      </div>
-      <div>
-        <button class="randomize">Generate random story</button>
-      </div>
-      <!-- Thanks a lot to Willy Aguirre for his help with the code for this assessment -->
-      <p class="story"></p>
-      
-  
+  <header>
+    <h2>Random Story Generator</h2>
+  </header>
 
+  <main class="container">
+
+    <div class="left">
+      <ul>
+        <li><label for="customname">Custom Name:</label>
+          <input id="customname" type="text" placeholder="">
+        </li>  
+        <li>
+          <input id="us" type="radio" name="ukus" value="us" checked><label for="us">US</label>
+        </li>
+        <li>
+          <input id="uk" type="radio" name="ukus" value="uk"><label for="uk">UK</label>
+        </li>
+        <li>
+          <button class="randomize">Generate random story</button>
+        </li>
+      </ul>
+    </div>
+        
+    <div class="content">
+      <p class="beforenews"> Story will be Generate here..</p>
+      <p class="story"></p> 
+    </div>
+  
+    <div class="right">
+      <ul>
+        <li><p><a href="#">Weather Forecast</a></p></li>
+        <li><p><a href="#">Breaking News</a></p></li>
+      </ul>
+    </div>
+
+  </main>
+
+  <footer class="container">
+    © copyright <span> 2021</span>
+  </footer>
+   
 <script src="scripts/main.js"></script>   
+
 </body>
 </html>
